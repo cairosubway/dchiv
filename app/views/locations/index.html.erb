@@ -1,0 +1,21 @@
+<h1>DC HIV - Free HIV Testing Locations - Washington, D.C.</h1>
+<br />
+<p>Organizations in DC that provide free HIV tests. Click on a location for contact information.</p>
+<br />
+<body>
+<div style='width: 800px; margin-left: auto; margin-right: auto'>
+  <div id="map" style='width: 800px; height: 400px;'></div>
+</div>
+<br />
+<p>Source: <a href="http://dctakesonhiv.com/hiv_testing">DC Takes on HIV</a></p>
+<p>Contact the creator at <a href="mailto:andrewhall4@gmail.com">andrewhall4@gmail.com</a></p>
+
+
+<script>
+handler = Gmaps.build('Google');
+handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+  markers = handler.addMarkers(<%=raw @hash.to_json %>);
+  handler.bounds.extendWith(markers);
+  handler.fitMapToBounds();
+});
+</script>
