@@ -4,4 +4,4 @@ rvm:
 env:
   - DB=sqlite3
 script:
-  - rake db:migrate
+  - bundle exec rake db:migrate
