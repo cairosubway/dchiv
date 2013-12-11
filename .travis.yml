@@ -7,5 +7,6 @@ script:
 - bundle exec rake db:migrate
 deploy:
   provider: heroku
+  buildpack: ruby 
   api_key:
     secure: QKxCTORANVjxM4uAo4/+dKAX8QehW9E3Ywms9f2O41eimovNp5ACZmxZYeG4HSqjPTQ3YZlL1Sh5imTpd79m7B7DhPHgaGdY+qJu8xQcX9eJ43nlONrqfgFe0FswplHpkX/PtsJ9YXRa9x35RrIU6GQi1Ak1ng2vQSxx8JiwCgc=
