@@ -3,21 +3,18 @@ development:
   database: dchiv_development
   encoding: unicode
   pool: 5
-  username: ahall
-  password:
+  username: postgres
   
 test:
   adapter: postgresql
   database: dchiv_test
   encoding: unicode
   pool: 5
-  username: ahall
-  password:
-  
+  username: postgres
+ 
 production:
   adapter: postgresql
   database: dchiv_production
   encoding: unicode
   pool: 5
-  username: ahall
-  password:
+  username: postgres
