@@ -1,15 +1,23 @@
 development:
-  adapter: sqlite3
-  database: db/development.sqlite3 
+  adapter: postgresql
+  database: dchiv_development
+  encoding: unicode
   pool: 5
+  username: ahall
+  password:
   
 test:
-  adapter: sqlite3
-  database: db/dchiv_test
+  adapter: postgresql
+  database: dchiv_test
+  encoding: unicode
   pool: 5
+  username: ahall
+  password:
   
 production:
-  adapter: sqlite3
-  database: db/dchiv_production
+  adapter: postgresql
+  database: dchiv_production
+  encoding: unicode
   pool: 5
-  
+  username: ahall
+  password:
