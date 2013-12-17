@@ -2,8 +2,6 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
 
-gem 'sqlite3'
-
 gem 'pg'
 
 group :assets do
@@ -23,9 +21,3 @@ gem 'rails_12factor', group: :production
 
 ruby '2.0.0'
 
-group :development, :test do
-  gem 'sqlite3'
-end
-group :production do
-  gem 'pg'
-end
