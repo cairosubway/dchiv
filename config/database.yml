@@ -3,14 +3,17 @@ development:
   database: dchiv_development
   pool: 5
   timeout: 5000
+  username: postgres
 test:
   adapter: postgresql
   database: dchiv_test
   pool: 5
   timeout: 5000
+  username: postgres
 
 production:
   adapter: postgresql
   database: dchiv_production
   pool: 5
   timeout: 5000
+  username: postgres	
